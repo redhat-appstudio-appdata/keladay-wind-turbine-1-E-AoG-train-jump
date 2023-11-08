@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/earvonen-tenant/keladay-wind-turbine-1/devfile-sample-code-with-quarkus@sha256:a46feef09410ca93852b9072632073d04bdaf16aa437c051b01be6a50391c824
+        name: my-java-quarkus
+        resources: {}
+status: {}
